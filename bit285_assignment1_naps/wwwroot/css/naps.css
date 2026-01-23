@@ -1,0 +1,22 @@
+﻿body {
+    background-color:cornsilk;
+}
+
+form>div {
+    display: grid;
+    grid-template-columns:100px 1fr auto;
+    grid-gap: .8em;
+    padding: .5em;
+}
+
+    label {
+        grid-column:1/2;
+    }
+
+    input,select {
+        grid-column: 2/3;
+    }
+    span, input[type="button"], input[type="submit"], input[type="reset"] {
+        grid-column: 3/4;
+    }
+
