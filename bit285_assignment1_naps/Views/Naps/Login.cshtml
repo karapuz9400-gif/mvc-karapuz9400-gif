@@ -1,0 +1,23 @@
+@model bit285_assignment1_naps.Models.User
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Login</h1>
+<fieldset>
+    <form method="post" asp-action="LoginPost">
+        <div>
+            <label>Username</label>
+            <span>@Model?.EmailAddress</span>
+        </div>
+        <div>
+            <label>Password</label>
+            <input name="Password" type="password" value="" />
+            <span>* required</span>
+        </div>
+        <div>
+            <input type="submit" value="Login" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</fieldset>

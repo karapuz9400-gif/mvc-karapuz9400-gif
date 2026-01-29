@@ -1,0 +1,37 @@
+@model bit285_assignment1_naps.Models.User
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>New Account Information</h1>
+<fieldset>
+    <form method="post" asp-action="AccountInfo">
+        <div>
+            <label>First Name</label>
+            <input asp-for="FirstName" name="FirstName" />
+            <span>* required</span>
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input asp-for="LastName" name="LastName" />
+            <span>* required</span>
+        </div>
+        <div>
+            <label>Email Address</label>
+            <input asp-for="EmailAddress" name="EmailAddress" />
+            <span>* required</span>
+        </div>
+        <div>
+            <label>Program</label>
+            <select asp-for="Program" name="Program">
+                <option>Web App Dev</option>
+                <option>Mobile App Dev</option>
+                <option>Front-end Dev</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Create Password" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</fieldset>

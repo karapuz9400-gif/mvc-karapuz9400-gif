@@ -4,6 +4,8 @@
  */
 // Add MVC services (controllers with views)
 builder.Services.AddControllersWithViews();
+// Register PasswordSuggestion service for dependency injection
+builder.Services.AddSingleton<bit285_assignment1_naps.Models.PasswordSuggestion>();
 
 
 
